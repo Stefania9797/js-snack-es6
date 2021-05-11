@@ -23,12 +23,11 @@ for (let index = 0; index < squadre.length; index++) {
 console.log(squadre);
 //Infine creiamo un nuovo array i cui elementi contengono 
 //solo nomi e falli subiti e stampiamo tutto in console.
-let newSquadre=[];
+const newSquadre=[];
 for (let index = 0; index < squadre.length; index++) {
-    let {nome,falliSubiti}=squadre[index]
-    newSquadre.push(squadre[index].nome, squadre[index].falliSubiti)
+    const {nome,falliSubiti}=squadre[index]
+    newSquadre.push({nome, falliSubiti})
 }
 console.log(newSquadre);
-
 
 
